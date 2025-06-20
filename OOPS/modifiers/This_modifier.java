@@ -21,5 +21,5 @@ public class This_modifier {
 		// TODO Auto-generated method stub
 		This_modifier R = new This_modifier(10, "Ravi");
 		R.display(); // calling display method to show values
-				}
+	}
 }
