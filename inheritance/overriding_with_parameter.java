@@ -15,7 +15,7 @@ class employe {
 }
 class Manager1 extends employe {
 	int teamsize;
-	void display(int id, String name, int salary, int teamsize) {
+	void display(int id, String name, int salary) {
 		super.display(id, name, salary);
 		this.teamsize = 10;
 		System.out.println("\n" + "Manager class details are :");
@@ -27,13 +27,12 @@ class Manager1 extends employe {
 }
 
 class HR1 extends Manager1 {
-	String department;
+	String department = "IT";
 
 	void display(int id, String name, int salary) {
-		super.display(id, name, salary, 10);
-		this.department = "HR";
+		super.display(id, name, salary);
 		System.out.println("HR class details are :");
-		System.out.println("Department:  HR department ");
+		System.out.println("Department:" + department);
 		System.out.println("" + "ID :: " + id);
 		System.out.println("Name :: " + name);
 		System.out.println("" + "Salary :: " + salary);
@@ -43,6 +42,6 @@ public class overriding_with_parameter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		HR1 hr = new HR1();
-		hr.display(3, "Rahil", 750000);
+		hr.display(1, "Ravi", 5000000);
 	}
 }
