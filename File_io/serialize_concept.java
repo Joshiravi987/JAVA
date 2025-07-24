@@ -24,10 +24,10 @@ public class serialize_concept {
 		//so that it can be easily saved to a file or transmitted over a network.
 		// in java this is done using the Serializable interface.
 		Studnet s =new Studnet(100, "Balleriane");
-		/*FileOutputStream fos = new FileOutputStream("student.txt");
+		/*FileOutputStream fos = new FileOutputStream("Test123.txt");
 		ObjectOutputStream o = new ObjectOutputStream(fos);
-		o.writeObject(s);
-		*/
+		o.writeObject(s);*/
+		
 		FileInputStream fin = new FileInputStream("student.txt");//deserialization of object
 		ObjectInputStream os = new ObjectInputStream(fin);
 		Studnet student = (Studnet) os.readObject();

@@ -2,11 +2,11 @@ package File_io;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class read_write_file {
-	public read_write_file() {
-		// TODO Auto-generated constructor stub
-		FileOutputStream fout = FileOutputStream("student.txt");
+	public read_write_file() throws IOException {
+		FileOutputStream fout = new FileOutputStream("student.txt");
 	FileInputStream fin = new FileInputStream("sam.txt");
 	int i = 0;
 	while ((i = fin.read()) != -1) { // Read until end of file
@@ -15,7 +15,7 @@ public class read_write_file {
 		
 	}}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 new read_write_file();
 	}

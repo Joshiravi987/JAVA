@@ -1,4 +1,6 @@
 //IMP INTERVIEW QUESTION
+//throw unchecked exception --
+//throws checked exception --
 // Custom exception handling in Java
 // Custom exceptions are user-defined exceptions that extend the Exception class.
 package Exception_handlng;
