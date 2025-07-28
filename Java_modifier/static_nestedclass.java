@@ -1,5 +1,5 @@
 package Java_modifier;
-
+//nested static class s
 class outer{
 	void outer_method() {
 		System.out.println("outer method display");
