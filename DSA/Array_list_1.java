@@ -18,6 +18,14 @@ public class Array_list_1 {
 		ak.set(3, 232);
 		System.out.println("removed element is " + ak.remove(4));
 		ak.add(70);
+		System.out.println("find element from given index"+ak.get(0));
+		ak.addLast(80);
+		ak.addFirst(90);
+		System.out.println("ArrayList after adding elements: " + ak);
+		ak.removeLast();
+		ak.removeFirst();
+		System.out.println("ArrayList after removing first and last elements: " + ak);
+		
 			Iterator<Integer> i = ak.iterator();
 		while (i.hasNext()) {
 			System.out.println(i.next());
