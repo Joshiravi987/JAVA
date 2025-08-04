@@ -24,15 +24,17 @@ public Admin_sorting_class(int id,String name) {
 }
 	@Override
 	public int compareTo(Admin_sorting_class o) {
-		return name.compareTo(o.name);
-		// TODO Auto-generated method stub
+		return Integer.compare(o.id, id);//library logic
+		//return name.compareTo(o.name,name);
+	
+
 		
 	/*	if(id == o.id) {
 			return 0;
 		}
 		else if (id>o.id) {
 			return 1;
-		}
+		}                                   //logic
 		else {
 		return -1; 
 	}*/
