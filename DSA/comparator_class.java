@@ -18,7 +18,6 @@ class idchoice implements Comparator{
 
 	@Override
 	public int compare(Object o1, Object o2) {
-		// TODO Auto-generated method stub
 		Admin_class a1 =(Admin_class) o1;
 		Admin_class  a2 =(Admin_class) o2;
 		/*if(a1.id == a2.id) {
